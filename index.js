@@ -74,7 +74,7 @@ const superWizard = new WizardScene('super-wizard',
     if (typeof origen !== 'undefined' && typeof destino !== 'undefined'){
       let fecha = new Date();
       var fechaFormateada = moment(fecha).format('DD/MM/YYYY');
-      let url = `https://www.tramalicante.es/horarios_pdf.php?origen=${origen.id}&destino=${destino.id}&fecha=${fechaFormateada}8&hini=00:00&hfin=23:59`
+      let url = `https://www.tramalicante.es/horarios_pdf.php?origen=${origen.id}&destino=${destino.id}&fecha=${fechaFormateada}&hini=00:00&hfin=23:59`
       ctx.reply('Ahí van los horarios!');
       ctx.reply(url);  
     }
